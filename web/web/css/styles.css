@@ -1,0 +1,312 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+a {
+    color: #3bb6e3;
+    transition: color 0.25s ease-out;
+}
+
+a:hover {
+    color: #157293;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.Wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+/**
+ * Header
+ */
+
+.Header {
+    padding: 1rem 0;
+}
+
+.Header-content {
+    overflow: hidden;
+}
+
+.Header-left {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .Header-left {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .Header-right {
+        float: right;
+    }
+}
+
+
+/**
+ * Download
+ */
+
+.Download {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+.Download-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.Download-button {
+    margin: 0 0.5rem;
+}
+
+.Download-button:first-of-type {
+    margin-left: 0;
+}
+
+.Download-button:last-of-type {
+    margin-right: 0;
+}
+
+
+/**
+ * Overlay
+ */
+
+.Overlay {
+    max-width: 1170px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 1rem 1rem 0rem 1rem;
+    background: #fff;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+.Overlay-actions {
+  border-top: 1px solid #E0E0E0;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  /*
+  padding-left: 1rem;
+  padding-right: 1rem;
+  */
+  margin-top: 1.5rem;
+}
+
+button.Overlay-close {
+    position: relative;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    opacity: 1;
+    font-family: inherit;
+    top: 0!important;
+    color: #3bb6e3;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+}
+
+button.Overlay-close:hover {
+      color: #157293;
+}
+
+
+/**
+ * Content
+ */
+
+.Content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/**
+ * Button
+ */
+
+.Button {
+    border: 2px solid #157293;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 0.75rem 0 0.5rem;
+    color: #222;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 40px;
+    font-weight: 400;
+    transition: all 0.25s ease-out;
+}
+
+/*
+.Button:hover {
+    border-color: #3bb6e3;
+}
+*/
+
+.Button--android {
+    border-color: #A4C53B;
+    color: #A4C53B;
+}
+
+.Button--ios {
+    border-color: #6D6D6D;
+    color: #6D6D6D;
+}
+
+.Button-icon {
+    width: auto;
+    height: 24px;
+    margin-right: 0.25rem;
+    position: relative;
+    top: -3px;
+}
+
+.Button path {
+    transition: all 0.25s ease-out;
+}
+
+.Button--android:hover {
+    background: #A4C53B;
+    color: #fff;
+}
+
+.Button--android:hover path {
+    fill: #fff;
+}
+
+.Button--ios:hover {
+    background: #6D6D6D;
+    color: #fff;
+}
+
+.Button--ios:hover path {
+    fill: #fff;
+}
+
+
+/**
+ * Logo
+ */
+
+.Logo {
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.Logo img {
+    height: 58px;
+    width: auto;
+}
+
+
+/**
+ * App
+ */
+
+.App {
+    background: #E9EFF3;
+    flex: 1;
+    position: relative;
+}
+
+.App .app {
+    padding: 3rem 0;
+}
+
+
+/**
+ * Footer
+ */
+
+.Footer {
+    color: #888;
+}
+
+.Footer-button {
+    color: inherit;
+    outline: none;
+}
+
+.Footer-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+@media (min-width: 600px) {
+    .Footer-left {
+        float: left;
+    }
+
+    .Footer-right {
+        float: right;
+    }
+}

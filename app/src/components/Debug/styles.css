@@ -1,0 +1,8 @@
+.debug {
+  padding: 1rem;
+  background: #E9EFF3;
+  border-top: 1px solid #c0392b;
+  border-bottom: 1px solid #c0392b;
+  background: rgba(231, 76, 60, 0.2);
+  margin: 2rem 0;
+}

@@ -1,0 +1,26 @@
+.statusError,
+.statusSuccess {
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+  color: #fff;
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: 1;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+.statusError {
+  background: #e74c3c;
+  border-bottom-color: #c0392b;
+}
+
+.statusSuccess {
+  color: #333;
+  background: #2ecc71;
+  background: #E9EFF3;
+  border-bottom-color: #27ae60;
+  border-bottom-color: #E9EFF3;
+}
