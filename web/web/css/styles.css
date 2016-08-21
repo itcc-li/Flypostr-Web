@@ -195,6 +195,7 @@ button.Overlay-close:hover {
     border-radius: 4px;
     display: inline-block;
     padding: 0 0.75rem 0 0.5rem;
+    text-align: center;
     color: #222;
     text-decoration: none;
     font-size: 1rem;
@@ -221,10 +222,12 @@ button.Overlay-close:hover {
 
 .Button-icon {
     width: auto;
+    width: 24px;
     height: 24px;
     margin-right: 0.25rem;
     position: relative;
     top: -3px;
+    display: inline-block;
 }
 
 .Button path {
@@ -281,6 +284,7 @@ button.Overlay-close:hover {
     background: #E9EFF3;
     flex: 1;
     position: relative;
+    min-height: 450px;
 }
 
 .App .app {
