@@ -3,9 +3,9 @@ const useref = require('gulp-useref');
 const del = require('del');
 
 gulp.task('build', function () {
-    gulp.src('index.html')
-        .pipe(useref())
-        .pipe(gulp.dest('dist'));
+  gulp.src('index.html')
+      .pipe(useref())
+      .pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', function () {
