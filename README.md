@@ -21,4 +21,4 @@ Please make sure you have [Node.js](https://nodejs.org/) installed.
   1. `$ cd web`
   2. `$ npm install`
   3. `$ gulp`
-4. Publish: `$ firebase deploy`
+4. Publish: `$ firebase deploy` - make sure to run it from the root directory (`Flypostr-Web`)
