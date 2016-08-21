@@ -9,7 +9,7 @@ gulp.task('build', function () {
 });
 
 gulp.task('clean', function () {
-  del(['dist/**/*']);
+  del.sync(['dist/**/*']);
 });
 
 gulp.task('copy', function () {
