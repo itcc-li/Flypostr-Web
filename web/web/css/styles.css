@@ -249,6 +249,12 @@ button.Overlay-close:hover {
     fill: #fff;
 }
 
+.Button--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
 
 /**
  * Logo
