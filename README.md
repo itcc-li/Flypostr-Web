@@ -11,6 +11,14 @@ Please check those folders for more information.
 
 Please make sure you have [Node.js](https://nodejs.org/) installed.
 
+### Simple
+
+`npm run build`
+
+---
+
+### Complex
+
 1. Install tools: `npm install -g gulp firebase-tools`
 2. Build `/app`:
   1. `$ cd app`
