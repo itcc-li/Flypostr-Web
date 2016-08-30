@@ -8,17 +8,20 @@ import styles from './styles.css';
 class Posting extends React.Component {
   render() {
     const posting = this.props.postingStore.activePosting;
-
     if (!posting) {
       return null;
     }
 
+    const renderImage = () => (
+      <div className={styles.media}>
+        <img src={posting.imageUrl} className={styles.image} />
+        {(!posting.imageUrl) ? this.renderLoader() : null}
+      </div>
+    );
+
     return (
       <div className={styles.posting}>
-        <div className={styles.media}>
-          <img src={posting.imageUrl} className={styles.image} />
-          {(!posting.imageUrl) ? this.renderLoader() : null}
-        </div>
+        {posting.imageUrl ? renderImage() : null}
         <div className={styles.content}>
           <h1 className={styles.title}>{posting.title}</h1>
         </div>

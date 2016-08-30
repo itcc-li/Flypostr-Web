@@ -23,6 +23,10 @@ class PostingStore {
 
     autorun(() => {
       if (this.activePosting) {
+        if (!this.activePosting.imageId) {
+          this.activePosting.imageUrl = null;
+          return false;
+        }
         this.storageRef.child(this.activePosting.imageId).getDownloadURL().then(url => {
           this.activePosting.imageUrl = url;
         }).catch(error => {
