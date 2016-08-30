@@ -21,7 +21,7 @@ class Posting extends React.Component {
 
     return (
       <div className={styles.posting}>
-        {posting.imageUrl ? renderImage() : null}
+        {posting.imageId ? renderImage() : null}
         <div className={styles.content}>
           <h1 className={styles.title}>{posting.title}</h1>
         </div>
